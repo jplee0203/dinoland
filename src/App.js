@@ -127,7 +127,7 @@ changePage(bool){
             mode: 1,
             changePages:"maze"
         })
-        this.socket = mySocket("https://dinoland.herokuapp.com/"); 
+        this.socket = mySocket("https://dinoland-chat-socket.herokuapp.com/"); 
         var obj = {
             room: "room1",
             user: this.state.myname
@@ -155,7 +155,7 @@ changePage(bool){
             mode: 1,
             changePages:"sticker"
         })
-        this.socket = mySocket("http://localhost:10001"); 
+        this.socket = mySocket("https://dinoland-chat-socket.herokuapp.com/"); 
         var obj = {
             room: "room2",
             user: this.state.myname
