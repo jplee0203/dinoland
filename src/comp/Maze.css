@@ -1,0 +1,234 @@
+body{
+    
+
+}
+
+.mazeApp {
+  background-image: url(img/space2.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+}
+/*
+
+#display{
+  text-align: center;
+  overflow: hidden;
+      width: 90%;
+    height: 90%;
+     position: absolute;
+    top:0;
+    bottom:0;
+    background-image: url(img/space2.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+
+
+#controls{
+    width: 100%;
+    height: 80%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-image: url(img/space2.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+    align-content: center;
+
+    
+}
+
+  
+   
+/*ben2*/
+.selections{
+   top:5%;
+    left:0;
+    right: 0;
+  
+    margin: auto;
+    position: absolute;
+   
+    width: 900px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.5);
+ background-image: url(img/space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+      
+}
+
+.selections_h{
+  position: absolute; 
+  top:-100px;
+  width: 500px;
+  height: 100px;
+  color:#fff;
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    
+}
+.selections_p{
+  position: absolute; 
+  top:180px;
+  width: 500px;
+  height: 100px;
+  color:#fff;
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    
+}
+.selections_img{
+    
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 500px;
+    height: 300px; 
+}
+
+.img02{
+    position: absolute;
+     top:30%;
+  
+     left: 0;
+   
+}
+.img01{
+     position: absolute;
+     top:20%;
+  
+     right: 0;
+    
+}
+
+#myImg{
+
+    position: absolute;
+    z-index: 3;
+    
+}
+
+.allImgs{
+  
+    position: absolute;
+    z-index: 3;
+}
+
+.hoverStart{
+    position: absolute;
+    height: 220px; 
+    width: 220px; 
+    left: -338px; 
+    top: -168px;
+  
+    z-index: 3;
+    display: none;
+    background-image: url(img/start.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.hoverP{
+     position: absolute;
+    height: 220px; 
+    width: 220px; 
+    color:#fff;
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+     
+    top:85px;
+   
+ 
+}
+
+.maze{ 
+     background: aqua; position: absolute; cursor: none; z-index: 3; opacity: 0;
+}
+/*ben*/
+.gameDisplay{
+    position: absolute;
+   
+    
+    top:5%;
+    left:0;
+    right: 0;
+    margin: auto;
+    width: 900px;
+    height: 600px;
+    
+}
+
+#divBody { position: absolute; background: pink; height: 100%; width: 100%; left: 0; top: 0; z-index: 2; 
+    background-image: url(img/space.png); background-size: cover;
+background-repeat: no-repeat;}
+#div1 { height: 30%; width: 10%; left: 0; top: 0px; }
+#div2 { height: 10%; width: 20%; left: 0; top: 30%; }
+#div3 { height: 20%; width: 10%; left: 20%; top: 30%; }
+#div4 { height: 10%; width: 20%; left: 30%; top: 30%; }
+#div5 { height: 20%; width: 10%; left: 40%; top: 10%; }
+#div6 { height: 10%; width: 60%; left: 10%; top: 10%; }
+#div7 { height: 40%; width: 10%; left: 60%; top: 10%; }
+#div8 { height: 5%; width: 60%; left: 10%; top: 50%; }
+#div9 { height: 5%; width: 30%; left: 60%; top: 5%; }
+#div10 { height: 40%; width: 5%; left: 90%; top: 5%; }
+#div11 { height: 5%; width: 20%; left: 70%; top: 20%; }
+#div12 { height: 60%; width: 10%; left: 75%; top: 5%; }
+#div13 { height: 5%; width: 10%; left: 90%; top: 40%; }
+#div14 { height: 40%; width: 5%; left: 95%; top: 45%; }
+#div15 { height: 40%; width: 5%; left: 95%; top: 45%; }
+#div16 { height: 5%; width: 40%; left: 60%; top: 80%; }
+#div17 { height: 40%; width: 3.5%; left: 78.8%; top: 45%; }
+#div18 { height: 20%; width: 3.5%; left: 67.5%; top: 45%; }
+#div19 { height: 3.5%; width: 60%; left: 10%; top: 62.5%; }
+#div20 { height: 15%; width: 2%; left: 10%; top: 50%; }
+#div21 { height: 15%; width: 2%; left: 60%; top: 65%; }
+#div22 { height: 3.5%; width: 20%; left: 40%; top: 81.25%; }
+#div23 { height: 15%; width: 3.5%; left: 40%; top: 67%; }
+#div24 { height: 3.5%; width: 42%; left: 0; top: 67%; }
+#div25 { height: 25%; width: 3.5%; left: 0; top: 67%; }
+#div26 { height: 25%; width: 2%; left: 30%; top: 67%; }
+#div27 { height: 3.5%; width: 42%; left: 0; top: 90%; }
+#div28 { height: 2%; width: 48.6%; left: 40%; top: 90.75%; }
+#div29 { height: 5%; width: 2%; left: 50%; top: 91%; }
+#div30 { height: 7%; width: 1.5%; left: 88%; top: 84%; }
+#divEnd { height: 5%; width: 10%; left: 45.5%; bottom: 0; }
+#score{
+  top:10px;   
+   left: 50px;  
+   position: absolute; 
+    font-size: 26px;
+    color: coral;
+    height: 100px; 
+    width: 100px; 
+    z-index: 999;
+    display: none;
+}
+.nBut{
+     top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 200px;
+    height: 100px; 
+      background-color: #4B99F7;
+            color: black;
+            font-size: 26px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+            text-align: center;
+            color: aliceblue
+    
+}
+ 
+
+       .nBut:hover {
+            background-color: #f9e8af;
+            color: black;
+        }
