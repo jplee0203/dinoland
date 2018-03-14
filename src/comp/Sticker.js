@@ -42,7 +42,7 @@ class Sticker extends Component {
                         return false;
                     }
 
-                    this.refs["u"+this.state.myId].style.left = ev.pageX-270+"px";
+                    this.refs["u"+this.state.myId].style.left = ev.pageX-350+"px";
                     this.refs["u"+this.state.myId].style.top = ev.pageY-140+"px";
 
 
@@ -56,7 +56,7 @@ class Sticker extends Component {
             
                     this.refs.theDisplay.addEventListener("click", (ev)=>{
                         this.socket.emit("stick", {
-                        x:ev.pageX-270+"px",
+                        x:ev.pageX-350+"px",
                         y:ev.pageY-140+"px",
                         src:this.refs["u"+this.state.myId].src
                         });
