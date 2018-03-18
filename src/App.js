@@ -184,7 +184,7 @@ changePage(bool){
             mode: 1,
             changePages:"maze"
         })
-        this.socket = mySocket("http://localhost:10001"); 
+        this.socket = mySocket("https://dinoland-chat-socket.herokuapp.com/"); 
         var obj = {
             room: "room1",
             user: this.state.myname

@@ -85,7 +85,7 @@ class Maze extends Component {
     }
     
     componentDidMount(){
-        this.socket = mySocket("http://localhost:10000");
+        this.socket = mySocket("https://dinoland-maze-socket.herokuapp.com/");
         
         this.socket.on("userjoined", (data)=>{
             this.setState({

@@ -24,7 +24,7 @@ class Qna extends Component {
         this.setState({
             questionImg:this.state.sampleImg[randomImg]
         })
-        this.socket = mySocket("http://localhost:10004");
+        this.socket = mySocket("https://dinoland-qna-socket.herokuapp.com/");
         
         this.socket.on("newq", (data)=>{
             this.setState({

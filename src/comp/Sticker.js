@@ -22,7 +22,7 @@ class Sticker extends Component {
     }
     
     componentDidMount(){
-        this.socket = mySocket("http://localhost:10002");
+        this.socket = mySocket("https://dinoland-sticker-socket.herokuapp.com/");
         
         this.socket.on("userjoined", (data)=>{
             this.setState({
