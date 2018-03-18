@@ -179,7 +179,8 @@ changePage(bool){
     }
     
     joinChat1 = ()=>{
-       
+       document.getElementById("alexP").style.display = "none";
+       document.getElementById("benP").style.display = "none";
         this.setState({
             mode: 1,
             changePages:"maze"
@@ -207,6 +208,8 @@ changePage(bool){
     }
     
         joinChat2 = ()=>{
+            document.getElementById("alexP").style.display = "none";
+       document.getElementById("benP").style.display = "none";
        console.log(this.state.mode);
         this.setState({
             mode: 1,
@@ -235,6 +238,8 @@ changePage(bool){
     }
         
         joinChat3 = ()=>{
+            document.getElementById("alexP").style.display = "none";
+       document.getElementById("benP").style.display = "none";
        console.log(this.state.mode);
         this.setState({
             mode: 1,
