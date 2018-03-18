@@ -27,6 +27,7 @@ body{
     height: 50px;
     z-index: 1;
     margin: auto;
+    color:black;
     
 }
 
@@ -45,7 +46,7 @@ body{
     background-color: cornflowerblue;
 }
 
-.bg{
+.bg1{
     width: 100vw;
     height: 100vh;
     align-items: center;

@@ -25,7 +25,7 @@ class RoomSticker extends Component {
             <button className="but1" onClick={this.props.handleDisplay.bind(this,"room1")}>Start Digging</button>
 
         </div>
-            <div className="bg">
+            <div className="bg1">
             <img className="img1" src={this.state.myImg} height={80}/>
             <img className="img2" src={this.state.myImg2} height={80}/>
             </div> 

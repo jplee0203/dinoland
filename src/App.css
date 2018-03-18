@@ -3,8 +3,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            
-            background-size:contain;
+            background-image: url("./comp/img/bg0.png");
+            background-size:cover;
             background-repeat: no-repeat;
             background-position:center;
             width: 100%;
@@ -181,25 +181,29 @@
             color: black;
         }
         
-        .loginInp {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 35%;
-            font-size: 26px;
-            padding: 12px 20px;
-            box-sizing: border-box;
-            border: 6px solid #593f2e;
-            -webkit-transition: 0.5s;
-            transition: 0.5s;
-            outline: none;
-            border-radius: 7px;
-        }
-
-        .loginInp:focus {
-            border: 3px solid #555;
-        }
+.loginInp{
+  display:block;
+    width: 100%;
+    padding: 15px 0 15px 12px;
+    font-weight: 400;
+    color: #377D6A;
+    background: rgba(0,0,0,0.3);
+    border: none;
+    outline: none;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px  1px rgba(255,255,255,0.2);
+    text-indent: 60px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    font-size: 13px;
+}
+.loginInp:focus{
+    text-indent: 12px;
+    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2);
+}
  
 .chattingBox_sending{
             position: absolute;
@@ -336,4 +340,115 @@
     background-repeat: no-repeat;
     
 }
+
+
+.ben{
+  position: absolute;
+ width: 400px;
+  bottom:-20px;
+  left:-40px;
+ 
+  z-index: 1;   
+}
+.alex{
+  position: absolute;
+  width: 400px;
+ 
+  bottom:-20px;
+  right:-40px;
+  
+  z-index: 1;      
+}
+.ben:hover {
+     -webkit-animation-name: mymove; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove;
+    animation-duration: 1s;
+     animation-iteration-count: infinite;
+    
+}
+.alex:hover {
+     -webkit-animation-name: mymove; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: mymove;
+    animation-duration: 1s;
+     animation-iteration-count: infinite;
+    
+}
+@-webkit-keyframes mymove {
+    0%   {bottom: 0px;}
+    50%  {bottom: 10px;}
+    100% {bottom: 0px;}
+}
+
+@keyframes mymove {
+    0%   {bottom: 0px;}
+    50%  {bottom: 10px;}
+    100% {bottom: 0px;}
+}
+
+
+
+
+
+.ben2{
+  position: absolute;
+
+ width: 400px;
+  bottom:-20px;
+  left:-40px;
+ -webkit-animation-name: myscale; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: myscale;
+    animation-duration: 1s;
+  z-index: 1;   
+}
+
+.alex2{
+  position: absolute;
+ width: 400px;
+  bottom:-20px;
+  right:-40px;
+ -webkit-animation-name: myscale; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: myscale;
+    animation-duration: 1s;
+  z-index: 1;   
+}
+
+@-webkit-keyframes myscale {
+    0%   {transform:scale(1)}
+    50%  {transform:scale(1.5)}
+    100% {transform:scale(1)}
+}
+
+@keyframes myscale {
+    0%   {transform:scale(1)}
+    50%  {transform:scale(1.5)}
+    100% {transform:scale(1)}
+}
+
+.benInfo{
+     position: absolute;
+    width: 400px;
+    height: 200px;
+  top:20px;
+  left:20px;
+   opacity: 0;
+    word-wrap:break-word;
+    font-size: 20px;
+}
+
+.alexInfo{
+     position: absolute;
+     width: 400px;
+     height: 200px;
+     top:20px;
+     right:20px;
+     opacity: 0;
+    font-size: 20px;
+    text-overflow: clip;
+    word-wrap:break-word;
+}
+
 

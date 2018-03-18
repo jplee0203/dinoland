@@ -9,7 +9,7 @@ class Maze extends Component {
         this.state={
             myImg: require("./img/img1.png"),
             myImg2: require("./img/img5.png"),
-            myImg3: require("./img/img3.png"),
+            myImg3: require("./img/dead.png"),
             allUsers:[],
             myId: null,
             countUser:0,
@@ -85,7 +85,7 @@ class Maze extends Component {
     }
     
     componentDidMount(){
-        this.socket = mySocket("https://dinoland-maze-socket.herokuapp.com/");
+        this.socket = mySocket("http://localhost:10000");
         
         this.socket.on("userjoined", (data)=>{
             this.setState({
@@ -232,7 +232,7 @@ document.getElementById("score").style.display = "block";
 
         
         return (
-                <div>{comp}</div>
+                <div className="bg">{comp}</div>
         );
     }
 }
